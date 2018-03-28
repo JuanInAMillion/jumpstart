@@ -1,6 +1,131 @@
 /* universal style */
 
-/*
-font-family: 'Monoton', cursive;
-font-family: 'Open Sans', sans-serif;
-*/
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  color: #399bd1;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+h3 {
+  color: #399bd1;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #399bd1;
+  margin-top: 2.8rem;
+  padding: 1.3rem 0;
+  width: 11.4rem;
+}
+
+.btn-primary:hover {
+  background-color: #399bd1;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+.btn-primary:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+/* jumbotron */
+
+#home {
+  margin-top: 51px;
+}
+
+.jumbotron-bike {
+  background-image: url('../images/jumbotron-bike.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.jumbotron {
+  padding: 11.85rem 0;
+  color: #fff;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 7.1rem;
+  text-shadow: -1px -1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.lead {
+  text-shadow: -1px -1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* project */
+
+.feature-project {
+  height: 300px;
+}
+
+.feature-project img {
+  width: 600px;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  opacity: 0.75;
+  transition: all 0.5s ease-in;
+}
+
+.image-container img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* about */
+
+#about {
+  background-color: #f3f3f3;
+}
+
+.about-container {
+  padding: 5.2rem 0;
+  text-align: center;
+}
+
+.about-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about-text {
+  margin: 0 auto;
+  padding-top: 1.4rem;
+  width: 60%;
+}
+
+@media screen and (max-width: 576px) {
+  .jumbotron h1 {
+    font-size: 5.7rem;
+  }
+  .container {
+    width: 95%;
+  }
+  .lead {
+    width: 100%;
+  }
+  .about-text {
+    width: 100%;
+  }
+}
