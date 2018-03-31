@@ -33,6 +33,13 @@ h3 {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
 }
 
+/* header */
+
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
 /* jumbotron */
 
 #home {
@@ -41,12 +48,24 @@ h3 {
 
 .jumbotron-bike {
   background-image: url('../images/jumbotron-bike.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+}
+
+.jumbotron-beer {
+  background-image: url('../images/jumbotron-beer.jpg');
+}
+
+.jumbotron-flowers {
+  background-image: url('../images/jumbotron-flowers.jpg');
+}
+
+.jumbotron-duffel {
+  background-image: url('../images/jumbotron-duffel.jpg');
 }
 
 .jumbotron {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 11.85rem 0;
   color: #fff;
   text-align: center;
@@ -62,11 +81,6 @@ h3 {
   text-shadow: -1px -1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   margin: 0 auto;
   width: 60%;
-}
-
-.nav-link {
-  font-size: 1.1rem;
-  font-weight: bold;
 }
 
 /* project */
@@ -115,9 +129,17 @@ h3 {
   width: 60%;
 }
 
+/* responsive */
+
+@media screen and (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 5rem;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .jumbotron h1 {
-    font-size: 5.7rem;
+    font-size: 4rem;
   }
   .container {
     width: 95%;

@@ -9,8 +9,8 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="resources/css/reset.css">
   <link href="https://fonts.googleapis.com/css?family=Monoton|Open+Sans:400,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="resources/bootstrap4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="resources/slick/slick.css" />
   <link rel="stylesheet" href="resources/css/style.css">
 </head>
 
@@ -43,13 +43,46 @@
 
   <main>
     <section id="home">
-      <div class="jumbotron jumbotron-bike jumbotron-fluid">
-        <div class="container">
-          <h1>Get Going.</h1>
-          <p class="lead">Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
-          <p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Jump In</a>
-          </p>
+      <div class="carousel">
+        <!-- Get Going -->
+        <div class="jumbotron jumbotron-bike">
+          <div class="container">
+            <h1>Get Going.</h1>
+            <p class="lead">Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
+            <p>
+              <a class="btn btn-primary btn-lg" href="#" role="button">Jump In</a>
+            </p>
+          </div>
+        </div>
+        <!-- GET THINKING -->
+        <div class="jumbotron jumbotron-beer">
+          <div class="container">
+            <h1>GET THINKING.</h1>
+            <p class="lead">Meet like-minded individuals who will help fuel your creative juices.</p>
+            <p>
+              <a class="btn btn-primary btn-lg" href="#" role="button">Jump In</a>
+            </p>
+          </div>
+        </div>
+        <!-- GET CREATING -->
+        <div class="jumbotron jumbotron-flowers">
+          <div class="container">
+            <h1>GET CREATING.</h1>
+            <p class="lead">Stop overthinking projects and begin putting them out into the world.</p>
+            <p>
+              <a class="btn btn-primary btn-lg" href="#" role="button">Jump In</a>
+            </p>
+          </div>
+        </div>
+        <!-- GET STARTED -->
+        <div class="jumbotron jumbotron-duffel">
+          <div class="container">
+            <h1>GET STARTED.</h1>
+            <p class="lead">What are you waiting for? Today's the day for your next big idea.</p>
+            <p>
+              <a class="btn btn-primary btn-lg" href="#" role="button">Jump In</a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -58,7 +91,7 @@
       <div class="container">
         <h2>Featured Project</h2>
         <div class="row">
-
+          <!-- featured project -->
           <div class="col-lg-6 col-12">
             <div class="feature-project image-container">
               <img src="resources/images/featured-project.png" alt="featured project">
@@ -69,6 +102,7 @@
             <p>by Leo De Firenze<br>DeFrost is a documentary about growing up in a little red house in a cold, harsh valley. This is a story about my mother's childhood. This film attempts to capture vignettes of her upbringing â€” her family, friends, pets,
               and eventual depature from a freezing valley in Northern Italy â€” through beautiful cinematography and narration.</p>
           </div>
+          <!-- product categories -->
           <div class="col-lg-3 col-6">
             <h3>Product Categories</h3>
             <ul>
@@ -94,6 +128,7 @@
 
         <h2>Projects</h2>
         <div class="row">
+          <!-- first project -->
           <div class="col-md-4 col-sm-12">
             <div class="image-container">
               <div class="card">
@@ -105,6 +140,7 @@
               </div>
             </div>
           </div>
+          <!-- second project -->
           <div class="col-md-4 col-sm-12">
             <div class="image-container">
               <div class="card">
@@ -116,6 +152,7 @@
               </div>
             </div>
           </div>
+          <!-- third project -->
           <div class="col-md-4 col-sm-12">
             <div class="image-container">
               <div class="card">
@@ -147,8 +184,19 @@
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <script src="resources/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="resources/bootstrap4/js/bootstrap.min.js" ></script>
   <script src="resources/js/main.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel').slick({
+        lazyLoad: 'ondemand',
+        infinite: true,
+        autoplay: false,
+      });
+    });
+  </script>
 </body>
 
 </html>
