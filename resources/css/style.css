@@ -67,6 +67,7 @@ h3 {
   background-position: center;
   background-size: cover;
   padding: 11.85rem 0;
+  height: 43.5rem;
   color: #fff;
   text-align: center;
 }
@@ -146,6 +147,9 @@ h3 {
   }
   .lead {
     width: 100%;
+  }
+  .feature-project img {
+    width: 350px;
   }
   .about-text {
     width: 100%;
