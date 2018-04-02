@@ -132,6 +132,24 @@ h3 {
 
 /* responsive */
 
+@media screen and (max-width: 2600px) {
+  .mobile-logo {
+    display: none;
+  }
+  .desktop-logo {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .mobile-logo {
+    display: block;
+  }
+  .desktop-logo {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .jumbotron h1 {
     font-size: 5rem;
